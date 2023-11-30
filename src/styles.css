@@ -1,0 +1,103 @@
+header {
+    margin: 0;
+    background-position: center;
+    background-image: url("https://s3-alpha-sig.figma.com/img/1ca8/a666/37aa17d7080da3224dc200ed1db1e95f?Expires=1702252800&Signature=A3B1H-TKrByJ6E1O~VF~rEie-FrMIK2SU8Q84vX-G3N5LWX~6IKdyIHP0FHSebOYnzD77H917htRew7vFb0VcYnHwjTAjdWoSd9npOeXCnAs32s1ESl2bR5KKbFx-tbW0RJeR0I0VbCoJl7Nh38g6zU8IhkDcP-JzaGnCl7ELZfNmq4-AmHlkX3OZOrBwOdXtr2k0V4yqWEqfLRZBqjF9IQnPB2EaFLZLXF8o7RUDWaG2s1NAK9nI8ZQ-HNi0g7-hZKIInfn62AjsW2X7hRB2PUjcFD2fTTE17KFP0OF2s3Y7Y2SbuZOXm30exGXnamHOH~aJHTWxAUI3fH6q2eqwg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+    background-size: cover;
+    width: 100%;
+    height: 1024px;
+
+}
+
+nav {
+    color: #FFF;
+padding-right:  955px;
+padding-bottom:  32px;
+padding: 32px;
+font-family: Inter;
+font-size: 30.4px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+html {
+    font-size: 0.6em;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.blog-cards-wrapper {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+.blog-card:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.blog-card-image {
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+}
+
+.blog-card-body {
+    padding: 4px;
+
+}
+
+.blog-card-title {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.blog-card-title:hover {
+    color: #216eff;
+}
+
+.blog-card-info {
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+}
+
+@media screen and (min-width:576px) {
+    .blog-cards-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 720px;
+    }
+
+    .blog-card {
+        width: calc((100% - 10px - 4px)/2);
+    }
+}
+
+@media screen and (min-width:992px) {
+    .blog-cards-wrapper {
+        max-width: 992px;
+    }
+
+    .blog-card {
+        width: calc((100% - 20px - 6px)/3);
+    }
+
+}
